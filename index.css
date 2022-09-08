@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+#mapaContent{
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    margin-left: 20%;
+}
+
+#mapaContent::-webkit-scrollbar {
+    color: gray;
+}
+  
+#mapaContent::-webkit-scrollbar-track {
+}
+
+#mapaContent::-webkit-scrollbar-thumb {
+}
+
+#botaoZoomMais, #botaoZoomMenos{
+    position: fixed;
+    top: 90%;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    right: 25%;
+}
+
+#botaoZoomMais{
+    right: 23.1%;
+}

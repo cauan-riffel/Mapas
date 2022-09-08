@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <title>Mapa do IFC!</title>
+    </head>
+    <body>
+        <div id="divLateral">
+
+        </div>
+        <div id="mapaContent">
+            <img src="img/mapaPrincipal.png" ondrag="mover(event)" alt="mapa do IFC" id="imgPrincipal">
+        </div>
+        <button id="botaoZoomMais" onclick="alterarZoom(1)">+</button>
+        <button id="botaoZoomMenos" onclick="alterarZoom(0)">-</button>
+        <script src="index.js" onload="alterarZoom(0)"></script>
+    </body>
+</html>
