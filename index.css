@@ -17,24 +17,19 @@ body{
 }
 
 #mapaContent::-webkit-scrollbar {
-    color: gray;
-}
-  
-#mapaContent::-webkit-scrollbar-track {
-}
-
-#mapaContent::-webkit-scrollbar-thumb {
+    display: none;
 }
 
 #botaoZoomMais, #botaoZoomMenos{
     position: fixed;
-    top: 90%;
-    width: 25px;
-    height: 25px;
+    top: 95%;
+    width: 30px;
+    height: 30px;
     border-radius: 25px;
-    right: 25%;
+    right: 75%;
+    font-size: 25px;
 }
 
 #botaoZoomMais{
-    right: 23.1%;
+    right: 72%;
 }

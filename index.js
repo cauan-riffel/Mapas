@@ -1,11 +1,11 @@
 let zoons = [],
-    zoomAtual = 3,
+    zoomAtual = 0,
     mapa = document.getElementById("imgPrincipal")
     
 document.body.addEventListener('drop', ()=>{mouse=0})
 
-for(let i=0; ++i<=12;){
-    zoons.push(12*i);
+for(let i=0; ++i<=20;){
+    zoons.push(12.5*i);
 }
 
 function alterarZoom(tipo){
@@ -31,7 +31,6 @@ async function mover(evento){
     else{
         let novoMouse=[evento.offsetX, evento.offsetY],
             posicao=[CONTROLE.scrollLeft, CONTROLE.scrollTop];
-        console.log(novoMouse);
         if((novoMouse[0]-mouse[0]>60 || novoMouse[0]-mouse[0]<-60) && (novoMouse[1]-mouse[1]>60 || novoMouse[1]-mouse[1]<-60)){
             mouse=0;
             mapa.style.cursor = "auto";
