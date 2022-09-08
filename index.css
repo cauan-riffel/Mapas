@@ -20,6 +20,10 @@ body{
     display: none;
 }
 
+#mapaContent>img {
+    cursor: all-scroll;
+}
+
 #botaoZoomMais, #botaoZoomMenos{
     position: fixed;
     top: 95%;
