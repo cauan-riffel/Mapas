@@ -31,7 +31,7 @@ async function mover(evento){
     else{
         let novoMouse=[evento.offsetX, evento.offsetY],
             posicao=[CONTROLE.scrollLeft, CONTROLE.scrollTop];
-        if((novoMouse[0]-mouse[0]>60 || novoMouse[0]-mouse[0]<-60) && (novoMouse[1]-mouse[1]>60 || novoMouse[1]-mouse[1]<-60)){
+        if((novoMouse[0]-mouse[0]>30 || novoMouse[0]-mouse[0]<-30) && (novoMouse[1]-mouse[1]>60 || novoMouse[1]-mouse[1]<-60)){
             mouse=0;
             mapa.style.cursor = "auto";
             return;
