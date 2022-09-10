@@ -12,9 +12,24 @@
         </div>
         <div id="mapaContent">
             <img src="img/mapaPrincipal.png" ondrag="mover(event)" alt="mapa do IFC" id="imgPrincipal" usemap="#mapa">
-            <map name="mapa">
-                <area class="mapBTN" id="botao" shape="rect" coords="5711, 2318, 5804, 2398" onclick="mostrarInformacoes(0)"><!-- CTG -->
-                <area class="mapBTN" id="botao2" shape="rect" style="border-color: red;" coords="5107, 1851, 5189, 1921" onclick="mostrarInformacoes(1)">
+            <map name="mapa"ondrag="mover(event)" >
+                <area class="mapBTN" shape="poly" coords="5711, 2318, 5699, 2381, 5806, 2400, 5817, 2337" onclick="mostrarInformacoes(0)"><!-- CTG -->
+                <!-- roxos esquerda para direita -->
+                <area class="mapBTN" shape="poly" coords="5107, 1851, 5099, 1909, 5190, 1922, 5198, 1864" onclick="mostrarInformacoes(1)">
+                <area class="mapBTN" shape="poly" coords="5291, 1826, 5280, 1881, 5274, 1881, 5270, 1907, 5319, 1915, 5334, 1834" onclick="mostrarInformacoes(2)">
+                <area class="mapBTN" shape="poly" coords="5382, 1710, 5343, 1902, 5373, 1908, 5375, 1889, 5399, 1894, 5433, 1721" onclick="mostrarInformacoes(3)">
+                <area class="mapBTN" shape="poly" coords="5473, 1689, 5437, 1870, 5501, 1884, 5512, 1826, 5519, 1827, 5522, 1800, 5548, 1805, 5533, 1880, 5597, 1893, 5630, 1731, 5564, 1718, 5551, 1795, 5524, 1790, 5531, 1761, 5526, 1761, 5538, 1702" onclick="mostrarInformacoes(4)">
+                <area class="mapBTN" shape="poly" coords="5737, 1759, 5707, 1920, 5772, 1933, 5803, 1771" onclick="mostrarInformacoes(5)">
+                <!-- tecnológico -->
+                <area class="mapBTN" shape="poly" coords="6205, 2068, 6103, 2078, 6104, 2069, 6064, 2071, 6064, 2083, 6031, 2084, 6033, 2117, 6139, 2107, 6140, 2129, 6175, 2125, 6177, 2146, 6117, 2151, 6117, 2145, 6028, 2151, 6031, 2210, 6180, 2198, 6181, 2203, 6190, 2202, 6192, 2229, 6217, 
+                2229" onclick="mostrarInformacoes(3)">
+                <!-- pedagógico -->
+                <area class="mapBTN" shape="poly" coords="6098, 2489, 6066, 2482, 6015, 2740, 6094, 2756, 6110, 2670, 6063, 2661" onclick="mostrarInformacoes(4)">
+                <area class="mapBTN" shape="poly" coords="6079, 2664, 6110, 2671, 6144, 2497, 6113, 2492, 6115, 2486, 6147, 2492, 6156, 2439, 6078, 2423, 6067, 2476, 6098, 2482, 6090, 2525, 6107, 2528" onclick="mostrarInformacoes(4)">
+                <area class="mapBTN" shape="poly" coords="6102, 2710, 6133, 2717, 6138, 2690, 6168, 2696, 6204, 2510, 6143, 2497, 6135, 2537, 6163, 2543, 6137, 2676, 6110, 2617" onclick="mostrarInformacoes(4)">
+                <!-- salas proximas a garagem -->
+                <area class="mapBTN" shape="poly" coords="6083, 2849, 5999, 2833, 5992" onclick="mostrarInformacoes(5)">
+
             </map>
         </div>
         <button id="botaoZoomMais" onclick="alterarZoom(1)">+</button>

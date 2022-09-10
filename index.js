@@ -2,7 +2,7 @@
 
 // iniciando controle do zoom
 let zoons = [],
-    zoomAtual = 0,
+    zoomAtual = 4,
     mapa = document.getElementById("imgPrincipal")
 
 for(let i=0; ++i<=20;){
@@ -57,10 +57,13 @@ function verDados(local){
 
 const MAPAS_CONTENT=[
         "<p>algum texto ai</p>\
-        <p>sei lá</p>\
-        ", "\
-        <p>algum texto vai</p>\
-        <p>sei lá tche</p>"
+        <p>sei lá</p>", 
+        "<p>algum texto vai</p>\
+        <p>sei lá tche</p>",
+        "<p>algum tato ai</p>\
+        <p>sec lá</p>", 
+        "<p>algum texa vai</p>\
+        <p>ssi lá tfhe</p>"
     ];
 
 let divLateral=document.getElementById("divLateral");
