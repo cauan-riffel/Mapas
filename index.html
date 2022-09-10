@@ -8,11 +8,14 @@
         <title>Mapa do IFC!</title>
     </head>
     <body>
-        <div id="divLateral">
-
-        </div>
+        <p id="divLateral">
+        </p>
         <div id="mapaContent">
-            <img src="img/mapaPrincipal.png" ondrag="mover(event)" alt="mapa do IFC" id="imgPrincipal">
+            <img src="img/mapaPrincipal.png" ondrag="mover(event)" alt="mapa do IFC" id="imgPrincipal" usemap="#mapa">
+            <map name="mapa">
+                <area class="mapBTN" id="botao" shape="rect" coords="5711, 2318, 5804, 2398" onclick="mostrarInformacoes(0)"><!-- CTG -->
+                <area class="mapBTN" id="botao2" shape="rect" style="border-color: red;" coords="5107, 1851, 5189, 1921" onclick="mostrarInformacoes(1)">
+            </map>
         </div>
         <button id="botaoZoomMais" onclick="alterarZoom(1)">+</button>
         <button id="botaoZoomMenos" onclick="alterarZoom(0)">-</button>

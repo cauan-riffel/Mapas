@@ -37,3 +37,25 @@ body{
 #botaoZoomMais{
     right: 72%;
 }
+
+#divLateral {
+    position: fixed;
+    width: 100%;
+    max-width: 270px;
+    height: 587px;
+    background-color: #fff;
+}
+
+#txt {
+    color: #000;
+    visibility: hidden;
+}
+
+#txt2 {
+    color: #000;
+    visibility: hidden;
+}
+
+.mapBTN:hover{
+    cursor: pointer;
+}
