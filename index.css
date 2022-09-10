@@ -46,16 +46,6 @@ body{
     background-color: #fff;
 }
 
-#txt {
-    color: #000;
-    visibility: hidden;
-}
-
-#txt2 {
-    color: #000;
-    visibility: hidden;
-}
-
 .mapBTN:hover{
     cursor: pointer;
 }
