@@ -2,11 +2,11 @@
 
 // iniciando controle do zoom
 let zoons = [],
-    zoomAtual = 4,
+    zoomAtual = 2,
     mapa = document.getElementById("imgPrincipal")
 
-for(let i=0; ++i<=20;){
-    zoons.push(12.5*i);
+for(let i=2; ++i<=28;){
+    zoons.push(4*i);
 }
 
 function alterarZoom(tipo){
@@ -54,18 +54,6 @@ function verDados(local){
 
 
 // iniciando display de conteudo
-
-const MAPAS_CONTENT=[
-        "<p>algum texto ai</p>\
-        <p>sei lá</p>", 
-        "<p>algum texto vai</p>\
-        <p>sei lá tche</p>",
-        "<p>algum tato ai</p>\
-        <p>sec lá</p>", 
-        "<p>algum texa vai</p>\
-        <p>ssi lá tfhe</p>"
-    ];
-
 let divLateral=document.getElementById("divLateral");
     
 function mostrarInformacoes(edificio){
@@ -73,4 +61,53 @@ function mostrarInformacoes(edificio){
         divLateral.children[0].remove();
     }
     divLateral.innerHTML = MAPAS_CONTENT[edificio];
+}
+
+// fim do displáy de conteudo
+
+function mostrar(qual){
+    const contents = [
+        `<h2 id='mostrar1' onclick="swithTo(this)">construção</h2>
+        <div id='content1' style="display: none">
+            <p>testetestetestetestetestetestetestetestetestetestetestetestetesteteste</p>
+            <img src="img\\exemplos\\1.jpg">
+        </div>`
+    ],
+        id = document.getElementById('divLateral');
+    id.innerHTML = contents[qual]
+    if(id.className=='fixar mostrarContent'){
+        id.className = 'puxarInvertido';
+        setTimeout(() => {
+            id.className = '';
+            id.innerHTML = '';
+        }, 990);
+    } else {
+        id.className = 'puxarNormal';
+        setTimeout(() => {
+            id.className = 'fixar animarContent';
+        }, 990);
+        setTimeout(() => {
+            id.className = 'fixar mostrarContent';
+        }, 1990);
+    }
+}
+
+let qual = 1
+
+function trocarMapa(){
+    if(qual){
+        qual--;
+        mapa.src = "img/mapaPrincipal.png";
+    }else{
+        qual++;
+        mapa.src = "img/mapaPrincipal.webp";
+    }
+}
+
+
+function swithTo(clique){
+    let quais = ['content1'],
+        h = {"mostrar1":0},
+        elemento = document.getElementById(quais[h[clique.id]]);
+    elemento.style.display = (elemento.style.display==='inline')?'none':'inline';
 }
